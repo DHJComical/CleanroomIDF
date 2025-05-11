@@ -2,7 +2,7 @@ package com.somebody.idlframework.item.skills;
 
 import java.util.List;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.init.ModCreativeTab;
 import com.somebody.idlframework.item.ItemBase;
 import com.somebody.idlframework.util.CommonDef;
@@ -243,7 +243,7 @@ public class ItemSkillBase extends ItemBase {
                             CommonFunctions.SafeSendMsgToPlayer(TextFormatting.RED, (EntityPlayer) caster, MessageDef.NOT_CASTABLE_MAINHAND);
                         }
                         else {
-                            IdlFramework.LogWarning("Trying to do invalid cast from a creature: %s", caster.getName());
+                            Main.LogWarning("Trying to do invalid cast from a creature: %s", caster.getName());
                         }
                     }
                 } else if (hand == EnumHand.OFF_HAND)
@@ -255,7 +255,7 @@ public class ItemSkillBase extends ItemBase {
                             CommonFunctions.SafeSendMsgToPlayer(TextFormatting.RED, (EntityPlayer) caster, MessageDef.NOT_CASTABLE_OFFHAND);
                         }
                         else {
-                            IdlFramework.LogWarning("Trying to do invalid cast from a creature: %s", caster.getName());
+                            Main.LogWarning("Trying to do invalid cast from a creature: %s", caster.getName());
                         }
                     }
             }

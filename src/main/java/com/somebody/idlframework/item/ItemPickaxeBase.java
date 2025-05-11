@@ -2,7 +2,7 @@ package com.somebody.idlframework.item;
 
 import java.util.List;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.init.ModCreativeTab;
 import com.somebody.idlframework.util.CommonFunctions;
 import com.somebody.idlframework.util.IDLSkillNBT;
@@ -109,7 +109,7 @@ public class ItemPickaxeBase extends ItemPickaxe implements IHasModel {
 	@Override
 	public void registerModels() 
 	{
-		IdlFramework.proxy.registerItemRenderer(this, 0, "inventory");
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 	@SideOnly(Side.CLIENT)
 	@Override

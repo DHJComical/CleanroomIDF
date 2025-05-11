@@ -2,7 +2,7 @@ package com.somebody.idlframework.item.food;
 
 import java.util.List;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.init.ModCreativeTab;
 import com.somebody.idlframework.item.ModItems;
 import com.somebody.idlframework.util.CommonFunctions;
@@ -72,7 +72,7 @@ public class ItemFoodBase extends ItemFood implements IHasModel {
     @Override
     public void registerModels()
     {
-        IdlFramework.proxy.registerItemRenderer(this, 0, "inventory");
+        Main.proxy.registerItemRenderer(this, 0, "inventory");
     }
 
     public ItemFoodBase(String name, int amount, float saturation, boolean isWolfFood) {

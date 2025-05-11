@@ -7,7 +7,7 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import com.google.common.base.Predicate;
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.entity.creatures.EntityModUnit;
 import com.somebody.idlframework.meta.MetaUtil;
 import net.minecraft.entity.Entity;
@@ -33,7 +33,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 
-@Mod.EventBusSubscriber(modid = IdlFramework.MODID)
+@Mod.EventBusSubscriber(modid = Main.MODID)
 public class EntityUtil {
     public static void simpleKnockBack(float power, EntityLivingBase source, EntityLivingBase target)
     {
@@ -69,7 +69,7 @@ public class EntityUtil {
     {
         if (livingBase == null || potion == null)
         {
-            IdlFramework.LogWarning("Trying to apply illegal potion");
+            Main.LogWarning("Trying to apply illegal potion");
             return false;
         }
         livingBase.addPotionEffect(new PotionEffect(potion, (int) (seconds * CommonDef.TICK_PER_SECOND) + 1, level));

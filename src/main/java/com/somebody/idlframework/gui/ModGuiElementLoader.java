@@ -2,7 +2,7 @@ package com.somebody.idlframework.gui;
 
 import javax.annotation.Nullable;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.gui.expOne.ContainerDemo;
 import com.somebody.idlframework.gui.expOne.GuiContainerDemo;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,7 +19,7 @@ public class ModGuiElementLoader implements IGuiHandler {
 
     public ModGuiElementLoader()
     {
-        NetworkRegistry.INSTANCE.registerGuiHandler(IdlFramework.instance, this);
+        NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, this);
     }
 
     @Nullable

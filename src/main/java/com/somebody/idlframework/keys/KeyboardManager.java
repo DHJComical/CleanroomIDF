@@ -1,6 +1,6 @@
 package com.somebody.idlframework.keys;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.proxy.ClientProxy;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
@@ -20,7 +20,7 @@ public class KeyboardManager {
              ClientProxy.KEY_BINDINGS) {
             ClientRegistry.registerKeyBinding(key);
         }
-        IdlFramework.Log("Registered %d keys", ClientProxy.KEY_BINDINGS.size());
+        Main.Log("Registered %d keys", ClientProxy.KEY_BINDINGS.size());
     }
 
     @SideOnly(Side.CLIENT)

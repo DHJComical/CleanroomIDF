@@ -2,7 +2,7 @@ package com.somebody.idlframework.blocks.tileEntity.builder.builderAction;
 
 import java.util.List;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -44,7 +44,7 @@ public class BuilderActionBlock extends BuilderActionBase {
     @Override
     public boolean Execute(World world, BlockPos ori_pos){
         if (relativePos.lengthSquared() < 1) {
-            IdlFramework.LogWarning("Trying to build a block at self-pos.");
+            Main.LogWarning("Trying to build a block at self-pos.");
             return true;
         }
 

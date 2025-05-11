@@ -2,7 +2,7 @@ package com.somebody.idlframework.blocks;
 
 import java.util.Random;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.init.ModCreativeTab;
 import com.somebody.idlframework.item.ModItems;
 import com.somebody.idlframework.util.IHasModel;
@@ -44,6 +44,6 @@ public class BlockBase extends Block implements IHasModel
 	
 	@Override
 	public void registerModels() {
-		IdlFramework.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 }

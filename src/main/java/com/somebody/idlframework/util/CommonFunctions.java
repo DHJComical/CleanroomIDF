@@ -3,7 +3,7 @@ package com.somebody.idlframework.util;
 import java.util.Calendar;
 import java.util.Random;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.item.ItemBase;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.resources.I18n;
@@ -183,7 +183,7 @@ public class CommonFunctions {
     }
 
     public static void LogPlayerAction(EntityLivingBase living, String action){
-        IdlFramework.Log(String.format("%s(%s): %s",living.getName(), living.getUniqueID(), action));
+        Main.Log(String.format("%s(%s): %s",living.getName(), living.getUniqueID(), action));
     }
 
     public static boolean RepairItem(ItemStack stack, int amount)
@@ -258,20 +258,20 @@ public class CommonFunctions {
             {
                 player.experience -= costLeft;
                 costLeft = 0;
-                IdlFramework.Log("A");
+                Main.Log("A");
             }
             else {
                 costLeft -= player.experience;
-                IdlFramework.Log("B");
+                Main.Log("B");
                 if (player.experienceLevel > 0)
                 {
                     player.experienceLevel--;
                     player.experience = XPForLevel(player.experienceLevel);
-                    IdlFramework.Log(String.format("player.experience = %d", XPForLevel(player.experienceLevel)));
+                    Main.Log(String.format("player.experience = %d", XPForLevel(player.experienceLevel)));
                 }
             }
         }
-        IdlFramework.Log(String.format("Lv= %s, xp = %s", player.experienceLevel, player.experience));
+        Main.Log(String.format("Lv= %s, xp = %s", player.experienceLevel, player.experience));
         return true;
     }
 

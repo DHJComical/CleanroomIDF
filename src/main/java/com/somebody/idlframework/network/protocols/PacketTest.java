@@ -1,6 +1,6 @@
 package com.somebody.idlframework.network.protocols;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.item.skills.ItemSkillBase;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -43,14 +43,14 @@ public class PacketTest implements IMessage {
             EntityPlayerMP player = ctx.getServerHandler().player;
 
             player.getServerWorld().addScheduledTask(() -> {
-                IdlFramework.Log("Packet:%d", msg.testVal);
+                Main.Log("Packet:%d", msg.testVal);
 
                 EnumHand hand = EnumHand.values()[msg.testVal];
 
                 ItemStack item = player.getHeldItem(hand);
                 if(item.isEmpty())
                 {
-                    IdlFramework.LogWarning("Trying to cast an empty item");
+                    Main.LogWarning("Trying to cast an empty item");
                 }
 
                 if(item.getItem() instanceof ItemSkillBase)

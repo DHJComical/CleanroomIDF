@@ -1,6 +1,6 @@
 package com.somebody.idlframework.blocks.tileEntity.orbs;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.event.world.ExplosionEvent;
@@ -19,7 +19,7 @@ public class TileEntityDeBoomOrb extends TileEntityOrbBase implements ITickable 
 		{
 			event.setCanceled(true);
 			PlaySoundHere();
-			IdlFramework.Log("Stopped an explosion");
+			Main.Log("Stopped an explosion");
 		}
 	}
 

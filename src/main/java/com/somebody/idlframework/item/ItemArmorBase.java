@@ -6,7 +6,7 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.init.ModCreativeTab;
 import com.somebody.idlframework.util.CommonFunctions;
 import com.somebody.idlframework.util.IDLSkillNBT;
@@ -132,7 +132,7 @@ public class ItemArmorBase extends ItemArmor implements IHasModel {
 	@Override
 	public void registerModels() 
 	{
-		IdlFramework.proxy.registerItemRenderer(this, 0, "inventory");
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 
 

@@ -3,7 +3,7 @@ package com.somebody.idlframework.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.util.sound.ModSoundEvent;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
@@ -17,9 +17,9 @@ public class ModSoundHandler {
 
     public static void soundRegister()
     {
-        IdlFramework.Log("Registering %s sounds.", SOUNDS.size());
+        Main.Log("Registering %s sounds.", SOUNDS.size());
         ForgeRegistries.SOUND_EVENTS.registerAll(ModSoundHandler.SOUNDS.toArray(new SoundEvent[0]));
-        IdlFramework.Log("Registered %s sounds.", SOUNDS.size());
+        Main.Log("Registered %s sounds.", SOUNDS.size());
     }
 
 }

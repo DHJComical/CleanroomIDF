@@ -1,6 +1,6 @@
 package com.somebody.idlframework.enchantments;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.EnumEnchantmentType;
@@ -126,7 +126,7 @@ public class ModEnchantmentBase extends Enchantment {
     public ModEnchantmentBase(String name, Rarity rarityIn, EnumEnchantmentType typeIn, EntityEquipmentSlot[] slots)
     {
         super(rarityIn, typeIn, slots);
-        setRegistryName(IdlFramework.MODID, name);
+        setRegistryName(Main.MODID, name);
         setName(name);
         ModEnchantmentInit.ENCHANTMENT_LIST.add(this);
         applicableEquipmentTypesOpen = slots;

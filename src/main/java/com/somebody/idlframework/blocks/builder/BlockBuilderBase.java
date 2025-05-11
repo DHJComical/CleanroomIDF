@@ -1,6 +1,6 @@
 package com.somebody.idlframework.blocks.builder;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.blocks.BlockBase;
 import com.somebody.idlframework.blocks.tileEntity.builder.TileEntityBuilderBase;
 import com.somebody.idlframework.init.ModCreativeTab;
@@ -35,7 +35,7 @@ public class BlockBuilderBase extends BlockBase implements ITileEntityProvider {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
-            IdlFramework.Log("Instantiate failed");
+            Main.Log("Instantiate failed");
         }
         return t;
     }

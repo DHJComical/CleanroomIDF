@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import javax.annotation.Nullable;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.util.IDLNBT;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -453,7 +453,7 @@ public class IDLNBTUtil {
     public static NBTTagCompound getPlyrIdlTagSafe(EntityPlayer player) {
         NBTTagCompound playerData = player.getEntityData();
         NBTTagCompound data = getTagSafe(playerData, EntityPlayer.PERSISTED_NBT_TAG);
-        NBTTagCompound idl_data = getTagSafe(data, IdlFramework.MODID);
+        NBTTagCompound idl_data = getTagSafe(data, Main.MODID);
 
         return idl_data;
     }

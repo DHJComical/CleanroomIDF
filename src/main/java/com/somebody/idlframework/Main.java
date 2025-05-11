@@ -23,8 +23,8 @@ import org.apache.logging.log4j.Logger;
 
 //To let the player be a traveling god who plays yin-yang magic.
 
-@Mod(modid = IdlFramework.MODID, name = IdlFramework.NAME, version = IdlFramework.VERSION)//dependencies = "required-after:Forge@[14.23.5.2705,)"
-public class IdlFramework {
+@Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION)//dependencies = "required-after:Forge@[14.23.5.2705,)"
+public class Main {
     public static final String MODID = "idlframework";
     public static final String NAME = "IdlFramework";
     public static final String VERSION = "0.1.101";
@@ -34,7 +34,7 @@ public class IdlFramework {
     public static final boolean SHOW_WARN = true;
 
     @Mod.Instance
-    public static IdlFramework instance;
+    public static Main instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static ProxyBase proxy;
@@ -108,10 +108,10 @@ public class IdlFramework {
     private void TrashTalking() {
         if (MetaUtil.isIDLLoaded)
         {
-            IdlFramework.Log("[Idealland Framework] Bow to Idealland.");
+            Main.Log("[Idealland Framework] Bow to Idealland.");
         }
         else {
-            IdlFramework.Log("[Idealland Framework] Made with Idealland Framework.");
+            Main.Log("[Idealland Framework] Made with Idealland Framework.");
         }
     }
 

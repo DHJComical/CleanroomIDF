@@ -5,7 +5,7 @@ import java.util.UUID;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.util.CommonDef;
 import com.somebody.idlframework.util.CommonFunctions;
 import com.somebody.idlframework.util.EntityUtil;
@@ -142,7 +142,7 @@ public class ItemSkillTrueSL extends ItemArknightsSkillBase {
                         }
                     }
                     else {
-                        IdlFramework.Log("%s is not in front");
+                        Main.Log("%s is not in front");
                     }
                 }
             }

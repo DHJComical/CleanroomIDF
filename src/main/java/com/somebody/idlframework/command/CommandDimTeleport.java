@@ -3,7 +3,7 @@ package com.somebody.idlframework.command;
 import java.util.List;
 
 import com.google.common.collect.Lists;
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.util.CommonFunctions;
 import com.somebody.idlframework.util.Teleport;
 import net.minecraft.command.CommandBase;
@@ -16,7 +16,7 @@ import net.minecraft.util.text.TextFormatting;
 
 public class CommandDimTeleport extends CommandBase {
 
-    private final List<String> aliases = Lists.newArrayList(IdlFramework.MODID, "tp", "tpdim", "tpdimension", "chuansong");
+    private final List<String> aliases = Lists.newArrayList(Main.MODID, "tp", "tpdim", "tpdimension", "chuansong");
 
     @Override
     public String getName() {

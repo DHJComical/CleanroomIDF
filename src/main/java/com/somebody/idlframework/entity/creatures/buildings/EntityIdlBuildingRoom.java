@@ -1,6 +1,6 @@
 package com.somebody.idlframework.entity.creatures.buildings;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.util.CommonDef;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -18,7 +18,7 @@ public class EntityIdlBuildingRoom extends EntityIdlBuildingBase {
         buildingCore.ResetTasks();
         InitTaskQueue();
         buildingCore.setSpeed(40f / CommonDef.TICK_PER_SECOND);
-        IdlFramework.LogWarning("Summon. Size = " + size);
+        Main.LogWarning("Summon. Size = " + size);
     }
 
     void InitTaskQueue()
@@ -27,13 +27,13 @@ public class EntityIdlBuildingRoom extends EntityIdlBuildingBase {
 
         if (buildingCore == null)
         {
-            IdlFramework.LogWarning("Core is null");
+            Main.LogWarning("Core is null");
         }
 
         int bottomRange = size;
         int wallHeight = 2 * size + 1;
 
-        IdlFramework.LogWarning("Size = " + size);
+        Main.LogWarning("Size = " + size);
 
         IBlockState blockState = Blocks.IRON_BLOCK.getDefaultState();
 

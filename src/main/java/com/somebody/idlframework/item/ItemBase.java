@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.UUID;
 import javax.annotation.Nonnull;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.init.ModCreativeTab;
 import com.somebody.idlframework.util.CommonFunctions;
 import com.somebody.idlframework.util.IDLSkillNBT;
@@ -167,7 +167,7 @@ public class ItemBase extends Item implements IHasModel {
 	@Override
 	public void registerModels() 
 	{
-		IdlFramework.proxy.registerItemRenderer(this, 0, "inventory");
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 
 

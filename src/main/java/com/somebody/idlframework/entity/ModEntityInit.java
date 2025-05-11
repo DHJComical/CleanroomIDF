@@ -1,6 +1,6 @@
 package com.somebody.idlframework.entity;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.util.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
@@ -40,7 +40,7 @@ public class ModEntityInit {
                 entity,
                 name,
                 id,
-                IdlFramework.instance,
+                Main.instance,
                 range,
                 1,
                 true,

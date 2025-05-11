@@ -3,7 +3,7 @@ package com.somebody.idlframework.enchantments;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.util.CommonDef;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
@@ -19,7 +19,7 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod.EventBusSubscriber(modid = IdlFramework.MODID)
+@Mod.EventBusSubscriber(modid = Main.MODID)
 public class ModEnchantmentInit {
 
     public static final EntityEquipmentSlot[] armorSlots = new EntityEquipmentSlot[] {EntityEquipmentSlot.HEAD, EntityEquipmentSlot.CHEST, EntityEquipmentSlot.LEGS, EntityEquipmentSlot.FEET};

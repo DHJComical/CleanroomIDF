@@ -1,6 +1,6 @@
 package com.somebody.idlframework.item.skills.arknights;
 
-import com.somebody.idlframework.IdlFramework;
+import com.somebody.idlframework.Main;
 import com.somebody.idlframework.item.skills.ItemSkillBase;
 import com.somebody.idlframework.util.CommonDef;
 import com.somebody.idlframework.util.CommonFunctions;
@@ -116,7 +116,7 @@ public class ItemArknightsSkillBase extends ItemSkillBase {
                     dura = 0;
                     IDLSkillNBT.SetCasting(stack, false);
                     activateCoolDownArknights(stack);
-                    IdlFramework.Log("%s casting complete.", entityIn);
+                    Main.Log("%s casting complete.", entityIn);
                 }
 
                 IDLSkillNBT.SetDura(stack, dura);
