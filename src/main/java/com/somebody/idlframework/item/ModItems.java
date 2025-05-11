@@ -25,7 +25,6 @@ public class ModItems {
 
 	//Tool Material
 //	public static final Item BLOOD_IRON_INGOT = new ItemBase("blood_iron_ingot");
-	public static final Item OBSIDIAN_INGOT  = new ItemBase("obsidian_ingot");
 //
 //    public static final Item.ToolMaterial TOOL_MATERIAL_BLOOD =
 //			EnumHelper.addToolMaterial("material_blood", 3, 512, 3.0F, 4F, 20).setRepairItem(new ItemStack( ModItems.BLOOD_IRON_INGOT));
