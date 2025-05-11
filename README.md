@@ -24,3 +24,4 @@ With **coremod and mixin support** that is easy to configure.
 ### About CleanroomIDF:
 - A hybrid template of [TemplateDevEnv](https://github.com/CleanroomMC/TemplateDevEnv) and [IdeallandFramework](https://github.com/IdeallandEarthDept/IdeallandFramework)
 - workflows.yml come form [Ecdcaeb/CleanroomIDF](https://github.com/Ecdcaeb/CleanroomIDF)
+- It creates an obsidian ingot (item) for beginners to refer to, the texture comes from [Mekanism](https://github.com/mekanism/Mekanism)
