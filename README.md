@@ -19,3 +19,8 @@ With **coremod and mixin support** that is easy to configure.
 - Dependencies script in [gradle/scripts/dependencies.gradle](gradle/scripts/dependencies.gradle), explanations are commented in the file.
 - Publishing script in [gradle/scripts/publishing.gradle](gradle/scripts/publishing.gradle).
 - When writing Mixins on IntelliJ, it is advisable to use latest [MinecraftDev Fork for RetroFuturaGradle](https://github.com/eigenraven/MinecraftDev/releases).
+
+
+### About CleanroomIDF:
+- A hybrid template of [TemplateDevEnv](https://github.com/CleanroomMC/TemplateDevEnv) and [IdeallandFramework](https://github.com/IdeallandEarthDept/IdeallandFramework)
+- workflows.yml come form [Ecdcaeb/CleanroomIDF](https://github.com/Ecdcaeb/CleanroomIDF)
